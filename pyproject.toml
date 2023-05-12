@@ -1,0 +1,7 @@
+[tool.coverage.run]
+source = ["."]
+omit = ["*/tests/*", "*/test_*.py", "*/__init__.py"]
+dynamic_context = "test_function"
+
+[tool.pytest.ini_options]
+addopts = "--testmon-noselect --cov --cov-report=lcov:lcov.info --cov-report=term --cov-append"

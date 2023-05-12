@@ -5,6 +5,14 @@ def test_installed_modules_exists():
     assert callable(get_modules)
 
 
+def test_module_class_exists():
+    assert callable(Module)
+
+
+def test_moule_class_has_repr():
+    assert callable(Module.__repr__)
+
+
 def test_installed_modules_returns_list():
     assert type(get_modules()) is list
 
